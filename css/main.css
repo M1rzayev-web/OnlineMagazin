@@ -6,6 +6,9 @@
     text-decoration: none;
     /* border: 1px solid red; */
 }
+::-webkit-scrollbar {
+  width: 0.001px;
+}
 
 .container {
     max-width: 1600px;
