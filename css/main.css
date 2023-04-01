@@ -1,0 +1,466 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    /* border: 1px solid red; */
+}
+
+.container {
+    max-width: 1600px;
+    border: 1px solid green;
+    background-color: #ECF4FF;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+
+}
+
+.navbar {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 0 11%;
+
+}
+
+.nav-contact {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.btn-aloqa {
+    margin-left: 65%;
+    width: 115px;
+    height: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Nuckle';
+    font-style: normal;
+    font-weight: 539;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #1E1E1E;
+    cursor: pointer;
+}
+
+.fa-envelope {
+    margin-left: 0;
+    font-size: 18px;
+}
+
+#language {
+    margin-right: -5%;
+    border: none;
+    outline: none;
+}
+
+.navList {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Logo {
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnCategory {
+    padding: 20px;
+    width: 150px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    /* font-family: 'Nuckle'; */
+    font-style: normal;
+    font-weight: 591;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: linear-gradient(270deg, #4D5EF6 0%, #F64D4D 100%);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.btnCategory>i {
+    margin-left: 0;
+    font-size: 22px;
+}
+
+.searchInpBtn {
+    width: 400px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #E4E7EE;
+    border-radius: 8px;
+}
+
+.searchBtn {
+    width: 15%;
+    height: 100%;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    background: #0D63F3;
+    cursor: pointer;
+}
+
+.searchBtn>i {
+    color: white;
+    font-size: 18px;
+}
+
+#search {
+    width: 85%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding: 0 10px;
+    border-radius: 8px 0 0 8px;
+    font-size: 18px;
+}
+
+.btnUsers {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #b5b6b8;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.btnUsers>i {
+    color: #7b7979;
+}
+
+.btnHeart {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: #ECF4FF;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #0D63F3;
+    font-size: 18px;
+}
+
+.btnShop {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: #ECF4FF;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #0D63F3;
+    font-size: 18px;
+}
+
+.hero {
+    width: 100%;
+    height: 500px;
+}
+
+/* slide css */
+.slideshow-container {
+    max-width: 85%;
+    /* border: 1px solid; */
+    height: 500px;
+    position: relative;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mySlides {
+    display: none;
+    text-align: center;
+
+}
+
+.mySlides img {
+    width: 95%;
+    vertical-align: middle;
+    border-radius: 20px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 42px;
+    height: 42px;
+    background: linear-gradient(270deg, rgba(77, 94, 246, 0.2) 0%, rgba(246, 77, 77, 0.2) 100%);
+    margin-top: -22px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.4s ease;
+    border-radius: 23px;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.next {
+    right: 0;
+    border-radius: 23px;
+
+}
+
+.prev {
+    left: 0;
+    border-radius: 23px;
+
+}
+
+.prev:hover,
+.next:hover {
+    background: linear-gradient(270deg, #4D5EF6 0%, #F64D4D 100%);
+    color: white;
+}
+
+
+/* Kategoriyalar */
+.sectionCategory {
+    width: 100%;
+    padding: 0 11%;
+}
+.CategoryH2{
+    font-family: 'Nuckle';
+font-style: normal;
+font-weight: 591;
+font-size: 28px;
+line-height: 34px;
+color: #1E1E1E;
+}
+
+.CategoriyList {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Categoriybtn {
+    margin-top: 10px;
+    width: 140px;
+    height: 200px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.CategoryP {
+    width: 100%;
+    height: 20%;
+    font-style: normal;
+    font-weight: 539;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #1E1E1E;
+}
+
+.btnBatafsil {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+/* Eng ko'p sotilganlar */
+.sectionKopSotilgan{
+    width: 100%;
+    margin-top: 40px;
+    padding: 0 11%;
+
+}
+.KopSotilganList{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ItemSotilganlar{
+    padding: 10px 25px 23px 25px;
+    width: 230px;
+    height: 390px;
+    background-color: white;
+    border-radius: 10px;
+ margin-top: 20px;
+}
+#imgSotilganlar{
+    width: 180px;
+    height: 180px;
+}
+.tanlashUchun{
+    position: absolute;
+    cursor: pointer;
+    font-size: 20px;
+    color:linear-gradient(270deg, rgba(77, 94, 246, 0.2) 0%, rgba(246, 77, 77, 0.2) 100%);
+}
+.narxItem{
+    font-style: normal;
+font-weight: 591;
+font-size: 18px;
+line-height: 22px;
+color: #0D63F3;
+margin: 5px 0;
+}
+.NameItem{
+    font-family: 'Nuckle';
+font-style: normal;
+font-weight: 539;
+font-size: 14px;
+line-height: 17px;
+margin: 7px 0;
+height: 55px;
+color: #1E1E1E;
+}
+.buyurtmaItem{
+    font-family: 'Nuckle';
+font-style: normal;
+font-weight: 539;
+font-size: 14px;
+line-height: 17px;
+color: #6C757D;
+height: 35px;
+}
+.btnSpanItem{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btnSpanItem>i{
+    font-size: 20px;
+    margin-right: 0;
+    cursor: pointer;
+}
+.btnSotibOlish{
+    width: 130px;
+height: 40px;
+font-size: 17px;
+background: #0D63F3;
+border-radius: 8px;
+border: none;
+color: white;
+margin-left: 0;
+cursor: pointer;
+}
+.btnKoproqKorish{
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 10px;
+}
+/* slayd2*/
+
+.slideshow-container2 {
+    max-width: 85%;
+    height: 300px;
+    position: relative;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mySlides2 img {
+    width: 95%;
+    vertical-align: middle;
+    border-radius: 20px;
+}
+.mySlides2 {
+    display: none;
+    text-align: center;
+}
+/* section3 css */
+.section3BrendlarBoyicha{
+    width: 100%;
+    margin-top: 30px;
+    padding: 0 11%;
+}
+.section3H2{
+    height: 50px;
+}
+.btnBrendItem{
+    width: 188px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    margin-left: 0;
+    cursor: pointer;
+}
+.section3ListBtn{
+ display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+/* slide3 */
+.slideshow-container3 {
+    max-width: 85%;
+    height: 300px;
+    position: relative;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mySlides3 img {
+    width: 95%;
+    vertical-align: middle;
+    border-radius: 20px;
+}
+.mySlides3 {
+    display: none;
+    text-align: center;
+}
+/* footer css */
+.footer{
+    width: 100%;
+    height: 450px;
+    background: linear-gradient(270deg, rgba(77, 94, 246, 0.2) 0%, rgba(246, 77, 77, 0.2) 100%);
+    margin-top: 80px;
+}

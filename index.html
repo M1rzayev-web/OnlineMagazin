@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="navbar">
+          <div class="nav-contact">
+            <a class="btn-aloqa"
+              ><i class="fa-solid fa-envelope"></i>Aloqa uchun</a
+            >
+            <select name="Language" id="language">
+              <option value="UZ">UZ</option>
+              <option value="RU">RU</option>
+            </select>
+          </div>
+          <div class="navList">
+            <a id="Logo" href="./index.html"
+              ><img src="./Images/svg/Logo.svg" alt=""
+            /></a>
+            <button class="btnCategory">
+              <i class="fa-solid fa-bars"></i>KATALOG
+            </button>
+            <div class="searchInpBtn">
+              <input
+                id="search"
+                type="search"
+                placeholder="Maxsulotlarni izlash"
+              />
+              <button class="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <button class="btnHeart">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <button class="btnShop">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+
+            <button class="btnUsers"><i class="fa-solid fa-user"></i></button>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <!-- slide  -->
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <a href="#"><img src="./Images/slideImg.png" alt="slade img" /></a>
+          </div>
+          <div class="mySlides fade">
+            <a href="#"><img src="./Images/slideImg.png" alt="slade img" /></a>
+          </div>
+          <div class="mySlides fade">
+            <a href="#"><img src="./Images/slideImg.png" alt="slade img" /></a>
+          </div>
+          <div class="mySlides fade">
+            <a href="#"><img src="./Images/slideImg.png" alt="slade img" /></a>
+          </div>
+          <div class="mySlides fade">
+            <a href="#"><img src="./Images/slideImg.png" alt="slade img" /></a>
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <!-- Kategoriyalar -->
+        <section class="sectionCategory">
+          <h2 class="CategoryH2">Kategoriyalar</h2>
+          <div class="CategoriyList">
+            <button class="Categoriybtn">
+              <img src="./Images/smartfonlar.png" alt="smartfonlar" />
+              <p class="CategoryP">Smartfonlar</p>
+            </button>
+            <button class="Categoriybtn">
+              <img src="./Images/mac.png" alt="kompyuterlar" />
+              <p class="CategoryP">Kompyuterlar va notebooklar</p>
+            </button>
+            <button class="Categoriybtn">
+              <img src="./Images/televizor.png" alt="smartfonlar" />
+              <p class="CategoryP">Televizorlar</p>
+            </button>
+            <button class="Categoriybtn">
+              <img src="./Images/smartWatch.png" alt="SmartWatch" />
+              <p class="CategoryP">Aqlli soatlar</p>
+            </button>
+            <button class="Categoriybtn">
+              <img src="./Images/AirPods.png" alt="Quloqchinr" />
+              <p class="CategoryP">Quloqchinlar</p>
+            </button>
+            <button class="Categoriybtn">
+              <img src="./Images/Conditsioner.png" alt="Konditsioner" />
+              <p class="CategoryP">Konditsioner</p>
+            </button>
+            <button class="Categoriybtn">
+              <img src="./Images/xaladelnik.png" alt="Xoladilnik" />
+              <p class="CategoryP">Sovutkichlar</p>
+            </button>
+            <button class="Categoriybtn">
+              <img src="./Images/kirMashina.png" alt="Kir moshina" />
+              <p class="CategoryP">Kir yuvish mashinalari</p>
+            </button>
+          </div>
+          <button class="btnBatafsil">Batafsil</button>
+        </section>
+
+        <!-- Kop Sotilganlar -->
+        <section class="sectionKopSotilgan">
+          <h2>Eng ko'p Sotilgan</h2>
+          <ul class="KopSotilganList">
+            <li class="ItemSotilganlar">
+              <img id="imgSotilganlar" src="./Images/mac180.png" alt="" />
+              <i class="fa-regular fa-heart tanlashUchun"></i>
+              <h4 class="narxItem">299 000 so’m</h4>
+              <p class="NameItem">
+                Apple Airpods Pro simsiz quloqchin , Oq rangda
+              </p>
+              <p class="buyurtmaItem">230 ta buyurtma</p>
+              <div class="btnSpanItem">
+                <button class="btnSotibOlish">Sotib olish</button>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </li>
+            <li class="ItemSotilganlar">
+              <img id="imgSotilganlar" src="./Images/mac180.png" alt="" />
+              <i class="fa-regular fa-heart tanlashUchun"></i>
+              <h4 class="narxItem">299 000 so’m</h4>
+              <p class="NameItem">
+                Apple Airpods Pro simsiz quloqchin , Oq rangda
+              </p>
+              <p class="buyurtmaItem">230 ta buyurtma</p>
+              <div class="btnSpanItem">
+                <button class="btnSotibOlish">Sotib olish</button>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </li>
+            <li class="ItemSotilganlar">
+              <img id="imgSotilganlar" src="./Images/mac180.png" alt="" />
+              <i class="fa-regular fa-heart tanlashUchun"></i>
+              <h4 class="narxItem">299 000 so’m</h4>
+              <p class="NameItem">
+                Apple Airpods Pro simsiz quloqchin , Oq rangda
+              </p>
+              <p class="buyurtmaItem">230 ta buyurtma</p>
+              <div class="btnSpanItem">
+                <button class="btnSotibOlish">Sotib olish</button>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </li>
+            <li class="ItemSotilganlar">
+              <img id="imgSotilganlar" src="./Images/mac180.png" alt="" />
+              <i class="fa-regular fa-heart tanlashUchun"></i>
+              <h4 class="narxItem">299 000 so’m</h4>
+              <p class="NameItem">
+                Apple Airpods Pro simsiz quloqchin , Oq rangda
+              </p>
+              <p class="buyurtmaItem">230 ta buyurtma</p>
+              <div class="btnSpanItem">
+                <button class="btnSotibOlish">Sotib olish</button>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </li>
+            <li class="ItemSotilganlar">
+              <img id="imgSotilganlar" src="./Images/mac180.png" alt="" />
+              <i class="fa-regular fa-heart tanlashUchun"></i>
+              <h4 class="narxItem">299 000 so’m</h4>
+              <p class="NameItem">
+                Apple Airpods Pro simsiz quloqchin , Oq rangda
+              </p>
+              <p class="buyurtmaItem">230 ta buyurtma</p>
+              <div class="btnSpanItem">
+                <button class="btnSotibOlish">Sotib olish</button>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </li>
+            <li class="ItemSotilganlar">
+              <img id="imgSotilganlar" src="./Images/mac180.png" alt="" />
+              <i class="fa-regular fa-heart tanlashUchun"></i>
+              <h4 class="narxItem">299 000 so’m</h4>
+              <p class="NameItem">
+                Apple Airpods Pro simsiz quloqchin , Oq rangda
+              </p>
+              <p class="buyurtmaItem">230 ta buyurtma</p>
+              <div class="btnSpanItem">
+                <button class="btnSotibOlish">Sotib olish</button>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </li>
+            <li class="ItemSotilganlar">
+              <img id="imgSotilganlar" src="./Images/mac180.png" alt="" />
+              <i class="fa-regular fa-heart tanlashUchun"></i>
+              <h4 class="narxItem">299 000 so’m</h4>
+              <p class="NameItem">
+                Apple Airpods Pro simsiz quloqchin , Oq rangda
+              </p>
+              <p class="buyurtmaItem">230 ta buyurtma</p>
+              <div class="btnSpanItem">
+                <button class="btnSotibOlish">Sotib olish</button>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </li>
+            <li class="ItemSotilganlar">
+              <img id="imgSotilganlar" src="./Images/mac180.png" alt="" />
+              <i class="fa-regular fa-heart tanlashUchun"></i>
+              <h4 class="narxItem">299 000 so’m</h4>
+              <p class="NameItem">
+                Apple Airpods Pro simsiz quloqchin , Oq rangda
+              </p>
+              <p class="buyurtmaItem">230 ta buyurtma</p>
+              <div class="btnSpanItem">
+                <button class="btnSotibOlish">Sotib olish</button>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </li>
+            <li class="ItemSotilganlar">
+              <img id="imgSotilganlar" src="./Images/mac180.png" alt="" />
+              <i class="fa-regular fa-heart tanlashUchun"></i>
+              <h4 class="narxItem">299 000 so’m</h4>
+              <p class="NameItem">
+                Apple Airpods Pro simsiz quloqchin , Oq rangda
+              </p>
+              <p class="buyurtmaItem">230 ta buyurtma</p>
+              <div class="btnSpanItem">
+                <button class="btnSotibOlish">Sotib olish</button>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </li>
+            <li class="ItemSotilganlar">
+              <img id="imgSotilganlar" src="./Images/mac180.png" alt="" />
+              <i class="fa-regular fa-heart tanlashUchun"></i>
+              <h4 class="narxItem">299 000 so’m</h4>
+              <p class="NameItem">
+                Apple Airpods Pro simsiz quloqchin , Oq rangda
+              </p>
+              <p class="buyurtmaItem">230 ta buyurtma</p>
+              <div class="btnSpanItem">
+                <button class="btnSotibOlish">Sotib olish</button>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </li>
+          </ul>
+          <button class="btnKoproqKorish">Ko'proq ko'rish</button>
+        </section>
+        <!-- slide2 -->
+        <div class="slideshow-container2">
+          <div class="mySlides2 fade">
+            <a href="#"><img src="./Images/slide2.png" alt="slade img" /></a>
+          </div>
+          <div class="mySlides2 fade">
+            <a href="#"><img src="./Images/slide2.png" alt="slade img" /></a>
+          </div>
+          <div class="mySlides2 fade">
+            <a href="#"><img src="./Images/slide2.png" alt="slade img" /></a>
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <!-- section2 Eng ommabop -->
+        <section class="sectionKopSotilgan">
+          <h2>Eng ommabop</h2>
+          <ul class="KopSotilganList">
+            <li class="ItemSotilganlar">
+              <img id="imgSotilganlar" src="./Images/mac180.png" alt="" />
+              <i class="fa-regular fa-heart tanlashUchun"></i>
+              <h4 class="narxItem">299 000 so’m</h4>
+              <p class="NameItem">
+                Apple Airpods Pro simsiz quloqchin , Oq rangda
+              </p>
+              <p class="buyurtmaItem">230 ta buyurtma</p>
+              <div class="btnSpanItem">
+                <button class="btnSotibOlish">Sotib olish</button>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </li>
+            <li class="ItemSotilganlar">
+              <img id="imgSotilganlar" src="./Images/mac180.png" alt="" />
+              <i class="fa-regular fa-heart tanlashUchun"></i>
+              <h4 class="narxItem">299 000 so’m</h4>
+              <p class="NameItem">
+                Apple Airpods Pro simsiz quloqchin , Oq rangda
+              </p>
+              <p class="buyurtmaItem">230 ta buyurtma</p>
+              <div class="btnSpanItem">
+                <button class="btnSotibOlish">Sotib olish</button>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </li>
+            <li class="ItemSotilganlar">
+              <img id="imgSotilganlar" src="./Images/mac180.png" alt="" />
+              <i class="fa-regular fa-heart tanlashUchun"></i>
+              <h4 class="narxItem">299 000 so’m</h4>
+              <p class="NameItem">
+                Apple Airpods Pro simsiz quloqchin , Oq rangda
+              </p>
+              <p class="buyurtmaItem">230 ta buyurtma</p>
+              <div class="btnSpanItem">
+                <button class="btnSotibOlish">Sotib olish</button>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </li>
+            <li class="ItemSotilganlar">
+              <img id="imgSotilganlar" src="./Images/mac180.png" alt="" />
+              <i class="fa-regular fa-heart tanlashUchun"></i>
+              <h4 class="narxItem">299 000 so’m</h4>
+              <p class="NameItem">
+                Apple Airpods Pro simsiz quloqchin , Oq rangda
+              </p>
+              <p class="buyurtmaItem">230 ta buyurtma</p>
+              <div class="btnSpanItem">
+                <button class="btnSotibOlish">Sotib olish</button>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </li>
+            <li class="ItemSotilganlar">
+              <img id="imgSotilganlar" src="./Images/mac180.png" alt="" />
+              <i class="fa-regular fa-heart tanlashUchun"></i>
+              <h4 class="narxItem">299 000 so’m</h4>
+              <p class="NameItem">
+                Apple Airpods Pro simsiz quloqchin , Oq rangda
+              </p>
+              <p class="buyurtmaItem">230 ta buyurtma</p>
+              <div class="btnSpanItem">
+                <button class="btnSotibOlish">Sotib olish</button>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </li>
+            <li class="ItemSotilganlar">
+              <img id="imgSotilganlar" src="./Images/mac180.png" alt="" />
+              <i class="fa-regular fa-heart tanlashUchun"></i>
+              <h4 class="narxItem">299 000 so’m</h4>
+              <p class="NameItem">
+                Apple Airpods Pro simsiz quloqchin , Oq rangda
+              </p>
+              <p class="buyurtmaItem">230 ta buyurtma</p>
+              <div class="btnSpanItem">
+                <button class="btnSotibOlish">Sotib olish</button>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </li>
+            <li class="ItemSotilganlar">
+              <img id="imgSotilganlar" src="./Images/mac180.png" alt="" />
+              <i class="fa-regular fa-heart tanlashUchun"></i>
+              <h4 class="narxItem">299 000 so’m</h4>
+              <p class="NameItem">
+                Apple Airpods Pro simsiz quloqchin , Oq rangda
+              </p>
+              <p class="buyurtmaItem">230 ta buyurtma</p>
+              <div class="btnSpanItem">
+                <button class="btnSotibOlish">Sotib olish</button>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </li>
+            <li class="ItemSotilganlar">
+              <img id="imgSotilganlar" src="./Images/mac180.png" alt="" />
+              <i class="fa-regular fa-heart tanlashUchun"></i>
+              <h4 class="narxItem">299 000 so’m</h4>
+              <p class="NameItem">
+                Apple Airpods Pro simsiz quloqchin , Oq rangda
+              </p>
+              <p class="buyurtmaItem">230 ta buyurtma</p>
+              <div class="btnSpanItem">
+                <button class="btnSotibOlish">Sotib olish</button>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </li>
+            <li class="ItemSotilganlar">
+              <img id="imgSotilganlar" src="./Images/mac180.png" alt="" />
+              <i class="fa-regular fa-heart tanlashUchun"></i>
+              <h4 class="narxItem">299 000 so’m</h4>
+              <p class="NameItem">
+                Apple Airpods Pro simsiz quloqchin , Oq rangda
+              </p>
+              <p class="buyurtmaItem">230 ta buyurtma</p>
+              <div class="btnSpanItem">
+                <button class="btnSotibOlish">Sotib olish</button>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </li>
+            <li class="ItemSotilganlar">
+              <img id="imgSotilganlar" src="./Images/mac180.png" alt="" />
+              <i class="fa-regular fa-heart tanlashUchun"></i>
+              <h4 class="narxItem">299 000 so’m</h4>
+              <p class="NameItem">
+                Apple Airpods Pro simsiz quloqchin , Oq rangda
+              </p>
+              <p class="buyurtmaItem">230 ta buyurtma</p>
+              <div class="btnSpanItem">
+                <button class="btnSotibOlish">Sotib olish</button>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </li>
+          </ul>
+          <button class="btnKoproqKorish">Ko'proq ko'rish</button>
+        </section>
+        <!-- Brendlar bo'yicha section3 -->
+        <section class="section3BrendlarBoyicha">
+          <h2 class="section3H2">Brendlar bo’yicha</h2>
+          <div class="section3ListBtn">
+            <button class="btnBrendItem">
+              <img src="./Images/hp.png" alt="brend Icon" />
+            </button>
+            <button class="btnBrendItem">
+              <img src="./Images/acer.png" alt="brend Icon" />
+            </button>
+            <button class="btnBrendItem">
+              <img src="./Images/asus.png" alt="brend Icon" />
+            </button>
+            <button class="btnBrendItem">
+              <img src="./Images/samsung.png" alt="brend Icon" />
+            </button>
+            <button class="btnBrendItem">
+              <img src="./Images/iPhone.png" alt="brend Icon" />
+            </button>
+            <button class="btnBrendItem">
+              <img src="./Images/msi.png" alt="brend Icon" />
+            </button>
+            <button class="btnBrendItem">
+              <img src="./Images/redmi.png" alt="brend Icon" />
+            </button>
+            <button class="btnBrendItem">
+              <img src="./Images/vivo.png" alt="brend Icon" />
+            </button>
+            <button class="btnBrendItem">
+              <img src="./Images/alohidaBrend.png" alt="brend Icon" />
+            </button>
+            <button class="btnBrendItem">
+              <img src="./Images/alohidaBrend.png" alt="brend Icon" />
+            </button>
+            <button class="btnBrendItem">
+              <img src="./Images/alohidaBrend.png" alt="brend Icon" />
+            </button>
+            <button class="btnBrendItem">
+              <img src="./Images/alohidaBrend.png" alt="brend Icon" />
+            </button>
+            <button class="btnBrendItem">
+              <img src="./Images/alohidaBrend.png" alt="brend Icon" />
+            </button>
+            <button class="btnBrendItem">
+              <img src="./Images/alohidaBrend.png" alt="brend Icon" />
+            </button>
+            <button class="btnBrendItem">
+              <img src="./Images/alohidaBrend.png" alt="brend Icon" />
+            </button>
+          </div>
+        </section>
+        <!-- slide3 -->
+        <div class="slideshow-container3">
+          <div class="mySlides3 fade">
+            <a href="#"><img src="./Images/slide2.png" alt="slade img" /></a>
+          </div>
+          <div class="mySlides3 fade">
+            <a href="#"><img src="./Images/slide2.png" alt="slade img" /></a>
+          </div>
+          <div class="mySlides3 fade">
+            <a href="#"><img src="./Images/slide2.png" alt="slade img" /></a>
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <!-- section4 -->
+        <section class="section3BrendlarBoyicha">
+          <h2 class="section3H2">Do'konlarimiz</h2>
+          <div class="section3ListBtn">
+            <button class="btnBrendItem">
+              <img src="./Images/elmakon.png" alt="brend Icon" />
+            </button>
+            <button class="btnBrendItem">
+              <img src="./Images/texnomart.png" alt="brend Icon" />
+            </button>
+            <button class="btnBrendItem">
+              <img src="./Images/mediapark.png" alt="brend Icon" />
+            </button>
+            <button class="btnBrendItem">
+              <img src="./Images/sandiq.png" alt="brend Icon" />
+            </button>
+            <button class="btnBrendItem">
+              <img src="./Images/goodzone.png" alt="brend Icon" />
+            </button>
+            <button class="btnBrendItem">
+              <img src="./Images/alohidaBrend.png" alt="brend Icon" />
+            </button>
+            <button class="btnBrendItem">
+              <img src="./Images/alohidaBrend.png" alt="brend Icon" />
+            </button>
+            <button class="btnBrendItem">
+              <img src="./Images/alohidaBrend.png" alt="brend Icon" />
+            </button>
+            <button class="btnBrendItem">
+              <img src="./Images/alohidaBrend.png" alt="brend Icon" />
+            </button>
+            <button class="btnBrendItem">
+              <img src="./Images/alohidaBrend.png" alt="brend Icon" />
+            </button>
+            <button class="btnBrendItem">
+              <img src="./Images/alohidaBrend.png" alt="brend Icon" />
+            </button>
+            <button class="btnBrendItem">
+              <img src="./Images/alohidaBrend.png" alt="brend Icon" />
+            </button>
+          </div>
+        </section>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+    <script src="./js/slide.js"></script>
+    <script src="./js/products.js"></script>
+  </body>
+</html>
