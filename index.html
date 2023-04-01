@@ -14,7 +14,10 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
+  <body class="body">
+    <div class="orqaFon">
+
+    </div>
     <div class="container">
       <header class="header">
         <nav class="navbar">
@@ -52,8 +55,59 @@
             </button>
 
             <button class="btnUsers"><i class="fa-solid fa-user"></i></button>
+            <div class="userDiv">
+              <div class="userSpan1">
+                <h6>Jaloliddin Mirzayev</h6>
+                <a id="userChiqish" href="#">Chiqish</a>
+              </div>
+              <button class="userList shaxsiyMalumot">
+                <i class="fa-solid fa-user"></i>
+                <p>Shaxsiy ma'lumotlar</p>
+              </button>
+              <button class="userList Buyurtmalarim">
+                <i class="fa-solid fa-check-double"></i>
+                <p>Mening buyurtmalarim</p>
+              </button>
+              <button class="userList Sevimlilar">
+                              <i class="fa-regular fa-heart"></i>
+                <p>Sevimlilar</p>
+              </button>
+              <button class="userList Manzillar">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Manzillar</p>
+              </button>
+            </div>
           </div>
         </nav>
+        <div class="userRegistr">
+            <button class="btnExit">X</button>
+            <h2>Hisobga kirish uchun </h2>
+            <button class="userKirish">Kirish</button>
+            <p>Yoki</p>
+            <button class="userRegistratsia"><p>Ro’yxatdan o’tish</p></button>
+        </div>
+        <div class="userRegistrTel">
+            <button class="btnExitTel">X</button>
+            <h2>Telefon raqam orqali kirish</h2>
+            <input class="TelefonRaqamInput" type="number" name="" id="" placeholder="Telefon raqam"><br>
+            <input class="RegisterPassword" type="password" name="" id="" placeholder="Parol"><br>
+            <button class="userRegistratsiaKirish"><p>Kirish</p></button><br>
+            <a id="notPass" href="#">Parolni unutdingizmi ?</a>
+        </div>
+        <div class="tiklashDiv">
+            <button class="btnTiklashExit">X</button>
+            <h2>Telefon raqamini kiriting</h2>
+            <input id="tiklashInput" type="number" placeholder="+ 998 9* *** ** **"><br>
+            <button class="tiklashBtnKirish">Kodni qabul qilish </button>
+        </div>
+         <div class="userRegistrSms">
+            <button class="btnExitSms">X</button>
+            <h2>Kirishni tasdiqlsh</h2>
+            <p>+ 998 9* *** ** ** raqamga kod yubordik</p>
+            <input class="RegisterSmsPassword" type="password" name="" id="" placeholder="Bir martalik  kodni kiriting"><br>
+            <button class="userRegistratsiaSmsKirit"><p>Kirish</p></button><br>
+            <a id="notPassSms" href="#">Parol kelmadimi ? </a>
+        </div>
       </header>
       <main>
         <!-- slide  -->
@@ -75,6 +129,13 @@
           </div>
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
         </div>
 
         <!-- Kategoriyalar -->
@@ -267,6 +328,11 @@
           </div>
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div style="text-align: center">
+          <span class="dot2" onclick="currentSlide(1)"></span>
+          <span class="dot2" onclick="currentSlide(2)"></span>
+          <span class="dot2" onclick="currentSlide(3)"></span>
         </div>
         <!-- section2 Eng ommabop -->
         <section class="sectionKopSotilgan">
@@ -470,6 +536,12 @@
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
+        <div style="text-align: center">
+          <span class="dot3" onclick="currentSlide(1)"></span>
+          <span class="dot3" onclick="currentSlide(2)"></span>
+          <span class="dot3" onclick="currentSlide(3)"></span>
+        </div>
+
         <!-- section4 -->
         <section class="section3BrendlarBoyicha">
           <h2 class="section3H2">Do'konlarimiz</h2>
@@ -513,9 +585,64 @@
           </div>
         </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="footerListAll">
+          <ul class="footerList1">
+            <li class="footerItem">
+              <h4>Hujjatlar</h4>
+              <p><a href="#">Umumiy shartlar</a></p>
+              <p><a href="#">Ofertalar arxivi</a></p>
+              <p><a href="#">Nizom</a></p>
+              <p><a href="#">Guvohnoma</a></p>
+            </li>
+            <li class="footerItem">
+              <h4>Servis</h4>
+              <p><a href="#">Do’konlar</a></p>
+              <p><a href="#">Biz haqimizda</a></p>
+              <p><a href="#">Hamkorlik uchun</a></p>
+              <p><a href="#">Qaytarish</a></p>
+              <p><a href="#">Promokodlar</a></p>
+            </li>
+            <li class="footerItem">
+              <h4>Mahsulotlar katalogi</h4>
+              <p><a href="#">Katalog 1</a></p>
+              <p><a href="#">Katalog 1</a></p>
+              <p><a href="#">Katalog 2</a></p>
+              <p><a href="#">Katalog 2</a></p>
+              <p><a href="#">Katalog 3</a></p>
+              <p><a href="#">Katalog 3</a></p>
+            </li>
+          </ul>
+          <ul class="footerList2">
+            <li class="footerList1Item">
+              <h4>Axbarot xizmati</h4>
+              <p>contact.@nextstore.uz</p>
+              <p>
+                +998 97 712 96 96 <br />
+                +998 95 503 09 09
+              </p>
+              <p>Sag’bon 186, Olmazor tumani, Toshkent, O'zbekiston</p>
+              <span class="footerSpan"
+                ><a href="#"><i class="fa-brands fa-facebook"></i></a
+                ><a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-telegram"></i></a
+                ><a href="#"><i class="fa-brands fa-tiktok"></i></a
+              ></span>
+            </li>
+          </ul>
+        </div>
+        <ul class="footerListBottom">
+          <li class="footerBottomLeft">
+            <p>2022 Nextstore.com</p>
+          </li>
+          <li class="footerBottomRight">
+            <p>Powered by</p>
+          </li>
+        </ul>
+      </footer>
     </div>
     <script src="./js/slide.js"></script>
     <script src="./js/products.js"></script>
+    <script src="./js/funksiyalar.js"></script>
   </body>
 </html>
