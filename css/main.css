@@ -855,6 +855,8 @@
     width: 230px;
     height: 493px;
     padding: 5px;
+    background-color: white;
+    border-radius: 10px;
 
 }
 /* catalog checkbox uchun */
