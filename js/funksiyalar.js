@@ -152,3 +152,13 @@ ExitFiltr.addEventListener("click", function () {
      katalogMiniCheckbox.style.display = "none";
      categoryMiniLeft.style.display = "block";
 })
+const exitBurgerBtn = document.querySelector(".exitBurgerBtn");
+const BurgerDiv = document.querySelector(".BurgerDiv");
+const btnBurger = document.querySelector(".btnBurger")
+btnBurger.addEventListener("click", function () {
+    BurgerDiv.style.display = "block";
+    
+})
+exitBurgerBtn.addEventListener("click", function () {
+    BurgerDiv.style.display="none"
+})
