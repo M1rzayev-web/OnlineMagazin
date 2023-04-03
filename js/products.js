@@ -1,5 +1,5 @@
-const Product = {
-  products: [
+const Product =
+  [
     {
       id: 1,
       quantity: 0,
@@ -604,9 +604,48 @@ const Product = {
         "https://i.dummyjson.com/data/products/30/3.jpg",
         "https://i.dummyjson.com/data/products/30/thumbnail.jpg",
       ],
-    },
-  ],
-  total: 100,
-  skip: 0,
-  limit: 30,
-};
+    }
+  ]
+const SearchInput = document.getElementById("search");
+const MalumotOlish = document.querySelector(".MalumotOlish");
+
+SearchInput.addEventListener("input", function () {
+  const searchValue = SearchInput.value.trim().toLowerCase();
+  if (searchValue === "") {
+    MalumotOlish.innerHTML = "";
+
+    return;
+  }
+
+  let ProductItem = Product.filter((item) => {
+    return (
+      item.title.toLowerCase().includes(searchValue) ||
+      item.category.toLowerCase().includes(searchValue) ||
+      item.brand.toLowerCase().includes(searchValue)
+    );
+  })
+
+    .map((item) => {
+      return `<li class="ItemMalumot">
+      <i class="fa-regular fa-heart tanlashUchun"></i>
+                  <img id="imgMaxsulotlar" src="${item.images[2]}" alt="" />
+                  
+                  <h4 class="narxItem">${item.price * 11400} so'm</h4>
+                  <p class="NameItem">
+                    ${item.description}
+                  </p>
+                  <p class="buyurtmaItem">${item.stock} ta buyurtma</p>
+                  <div class="btnSpanItem">
+                    <button class="btnSotibOlish">Sotib olish</button>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+                </li>
+                `;
+    })
+    .join("");
+  // DeleteSearchAllInfo();
+
+  MalumotOlish.innerHTML = ProductItem;
+});
+
+

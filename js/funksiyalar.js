@@ -1,9 +1,9 @@
 const userDiv = document.querySelector(".userDiv");
 const btnUser = document.querySelector(".btnUsers");
 const Fon = document.querySelector(".orqaFon");
-const container = document.querySelector(".container");
 const chiqish = document.getElementById("userChiqish");
 const shaxsiyMalumotlar = document.querySelector(".shaxsiyMalumot");
+const shaxsiyMalumotlar1 = document.querySelector(".shaxsiyMalumot1");
 const userRegistr = document.querySelector(".userRegistr");
 const btnExit = document.querySelector(".btnExit");
 const btnExitTel = document.querySelector(".btnExitTel");
@@ -19,6 +19,7 @@ const btnExitSms = document.querySelector(".btnExitSms");
 const katalogExitBtn = document.querySelector(".katalogExitBtn");
 const katalogdiv = document.querySelector(".katalogdiv");
 const btnCategory = document.querySelector(".btnCategory");
+const sectionKopSotilgan = document.querySelector(".sectionKopSotilgan");
 // bosilganda shaxsiyMalumotlar chiqishi uchun
 btnUser.addEventListener("click", function (e) {
   e.preventDefault();
@@ -31,10 +32,17 @@ chiqish.addEventListener("click", function () {
   Fon.style.display = "none";
 });
 // shaxsiyMalumotlar bosilganda kirish yoki registratsiya qilish
+shaxsiyMalumotlar1.addEventListener("click", function () {
+  userRegistr.style.display = "block";
+  Fon.style.display = "block";
+  userDiv.style.display = "none";
+});
 shaxsiyMalumotlar.addEventListener("click", function () {
   userRegistr.style.display = "block";
   Fon.style.display = "block";
   userDiv.style.display = "none";
+    BurgerDiv.style.display = "none";
+
 });
 // kirish yoki registratsiyadan chiqish uchun
 btnExit.addEventListener("click", function () {
@@ -105,6 +113,7 @@ const BtnKategoryPc = document.querySelector(".BtnKategoryPc");
 const sectionCategory = document.querySelector(".sectionCategory");
 const sectionEngOmmabop = document.querySelector(".sectionEngOmmabop");
 const slideshowContainer2 = document.querySelector(".slideshow-container2");
+const slideshowContainer = document.querySelector(".slideshow-container");
 const slideshowContainer3 = document.querySelector(".slideshow-container3");
 const section3BrendlarBoyicha = document.querySelector(
   ".section3BrendlarBoyicha"
@@ -114,6 +123,7 @@ const section3DokonlarBoyicha = document.querySelector(
 );
 const dotsHover1 = document.querySelector(".dotsHover1");
 const dotsHover = document.querySelector(".dotsHover");
+const dotsHover2 = document.getElementById("dotsHover2");
 BtnKategoryPc.addEventListener("click", function () {
   categoryBtnList.style.display = "block";
   sectionCategory.style.display = "none";
@@ -162,3 +172,19 @@ btnBurger.addEventListener("click", function () {
 exitBurgerBtn.addEventListener("click", function () {
     BurgerDiv.style.display="none"
 })
+const searchBtn = document.querySelector('.searchBtn')
+searchBtn.addEventListener("submit", function () {
+      slideshowContainer2.style.display = "none";
+      slideshowContainer3.style.display = "none";
+      slideshowContainer.style.display = "none";
+      section3BrendlarBoyicha.style.display = "none";
+  section3DokonlarBoyicha.style.display = "none";
+  sectionEngOmmabop.style.display = "none";
+sectionCategory.style.display="none"
+      dotsHover.style.display = "none";
+  dotsHover2.style.display = "none";
+  sectionKopSotilgan.style.display="none"
+      dotsHover1.style.display = "none";
+})
+
+
