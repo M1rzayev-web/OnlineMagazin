@@ -608,7 +608,6 @@ const Product =
   ]
 const SearchInput = document.getElementById("search");
 const MalumotOlish = document.querySelector(".MalumotOlish");
-
 SearchInput.addEventListener("input", function () {
   const searchValue = SearchInput.value.trim().toLowerCase();
   if (searchValue === "") {
@@ -627,7 +626,7 @@ SearchInput.addEventListener("input", function () {
 
     .map((item) => {
       return `<li class="ItemMalumot">
-      <i class="fa-regular fa-heart tanlashUchun"></i>
+      <i class="fa-solid fa-heart-circle-plus"></i>
                   <img id="imgMaxsulotlar" src="${item.images[2]}" alt="" />
                   
                   <h4 class="narxItem">${item.price * 11400} so'm</h4>
@@ -643,9 +642,50 @@ SearchInput.addEventListener("input", function () {
                 `;
     })
     .join("");
-  // DeleteSearchAllInfo();
 
   MalumotOlish.innerHTML = ProductItem;
 });
 
 
+const searchMinInput = document.querySelector(".searchMinInput");
+const searchBtnMini = document.querySelector(".searchBtnMini");
+searchBtnMini.addEventListener("click", function () {
+  const searchValueMini = searchMinInput.value.trim().toLowerCase();
+  if (searchValueMini === "") {
+    MalumotOlish.innerHTML = "";
+
+    return;
+  }
+
+  let ProductItem = Product.filter((item) => {
+    return (
+      item.title.toLowerCase().includes(searchValueMini) ||
+      item.category.toLowerCase().includes(searchValueMini) ||
+      item.brand.toLowerCase().includes(searchValueMini)
+    );
+  })
+
+    .map((item) => {
+      return `<li class="ItemMalumot">
+      <i class="fa-solid fa-heart-circle-plus"></i>
+                  <img id="imgMaxsulotlar" src="${item.images[1]}" alt="" />
+                  
+                  <h4 class="narxItem">${item.price * 11400} so'm</h4>
+                  <p class="NameItem">
+                    ${item.description}
+                  </p>
+                  <p class="buyurtmaItem">${item.stock} ta buyurtma</p>
+                  <div class="btnSpanItem">
+                    <button class="btnSotibOlish">Sotib olish</button>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+                </li>
+                `;
+    })
+    .join("");
+
+  MalumotOlish.innerHTML = ProductItem;
+});
+
+// slide qilish productni
+    
